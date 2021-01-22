@@ -17,7 +17,7 @@ from urllib.error import URLError
 
 # This is a known good revision of LLVM for building the kernel
 # To bump this, run 'PATH_OVERRIDE=<path_to_updated_toolchain>/bin kernel/build.sh --allyesconfig'
-GOOD_REVISION = '4830d458dd0d133354cbe1a616e38dfda8e096b8'
+GOOD_REVISION = 'f187d64c80acd84f3f60799b80eba2485f8866df'
 
 
 class Directories:
@@ -142,7 +142,7 @@ def parse_parameters(root_folder):
 
                         """),
                         type=str,
-                        default="ClangBuiltLinux")
+                        default="GengKapak")
     parser.add_argument("-i",
                         "--incremental",
                         help=textwrap.dedent("""\
